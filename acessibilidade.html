@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Primeira aula prática de HTML5 e CSS3">
+    <meta name="author" content="Gabriel Alexandre">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Aula HTML!</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header id="cabecalho">
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li class="fast-keys"><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Ir para o conteúdo [1]</a></li>
+                <li class="fast-keys"><a href="#navegacao" accesskey="2" title="Ir para a barra de navegação">Ir para o menu [2]</a></li>
+                <li class="fast-keys"><a href="#rodape" accesskey="3" title="Ir para o rodapé">Ir para o rodapé [3]</a></li>
+                <li id="page-access"><a href="acessibilidade.html" title="Ir para a página de acessibilidade">Acessibilidade</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste" title="Inverter o contraste">Contraste</a></li>
+                <li class="sem-contraste"><a href="javascript:void(0);" id="sem-contraste" title="Remover o contraste">Sem contraste</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar" title="Aumentar a fonte">A+</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="diminuir" title="Diminuir a fonte">A-</a></li>
+            </ul>
+        </div>
+        <img class="imagem" src="imagens/logo.png" alt="Logo da Obra Social Dom Bosco.">
+        <img id="assistencia" class="imagem" src="imagens/assistencia-e-desenvolvimento-social_centralizado.png" alt="Logo da prefeitura">
+
+        <!-- Navegação -->
+        <nav id="navegacao">
+            <!-- Menu responsivo-->
+            <label for="rps_menu"><img src="imagens/menu.png" alt="Ícone de menu" class="menu-icon"></label>
+            <input type="checkbox" id="rps_menu">
+            <!-- =============== -->
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li class="sub-lista">
+                    <a href="#">Listas</a>
+                    <ul>
+                        <li><a href="lista_ordenada.html" class="sub-lista-link">Lista ordenada</a></li>
+                        <li><a href="lista_nao_ordenada.html" class="sub-lista-link nao-ordenada">Lista não ordenada</a></li>
+                        <li><a href="lista_ordenada.html" class="sub-lista-link">Lista ordenada</a></li>
+                    </ul>
+                </li>
+                <li><a href="layout.html">Layout</a></li>
+                <li><a href="contato.html">Fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal-->
+    <main id="conteudo">
+        <ul id="breadcrumb">
+            <li><a href="index.html">Início</a></li>
+            <li>Acessibilidade</li>
+        </ul>
+        <h1>ACESSIBILIDADE</h1>
+		
+		<p>Este site foi desenvolvido para que pessoas com deficiência visual, baixa visão, daltonismo, deficiência auditiva e mobilidade reduzida possam navegar por meio de recursos como alto contraste, aumento de fonte, teclas de atalho, tradução para a Língua Brasileira de Sinais e navegação por teclado.</p>
+
+		<p>Para aumentar a fonte, é só clicar no símbolo de A+ em nossa barra de acessibilidade. Caso queira voltar ao tamanho de fonte original, é só clicar em A-.</p>
+
+		<p>Se for necessário, você também pode usar o zoom nativo do seu navegador, pressionando as teclas “Ctrl” e “+” para aumentar todo o site e “Ctrl” e “-“ para diminuir. Para voltar ao padrão, pressione “Ctrl” e “0”.</p>
+
+		<p>Este site tem melhor acessibilidade quando acessado nas versões mais atualizadas do seu navegador web. Utilize sempre a versão mais recente de seu software.</p>
+
+		<p>Teclas de atalho por navegadores</p>
+		<p>Internet Explorer e Google Chrome:</p>
+
+		<p>“Alt” + “1” - ir para o conteúdo</p>
+		<p>“Alt” + “2” - ir para o menu</p>
+		<p>“Alt” + “3” - ir para o rodapé</p>
+		<p>Firefox:</p>
+
+		<p>“Alt” + “Shift” + “número”</p>
+		<p>Opera:</p>
+
+		<p>“Shift” + “Escape” + “número”</p>
+		<p>Safari e OmniWeb:</p>
+
+		<p>“Ctrl” + “número”</p>
+		<p>Navegação por tabulação</p>
+		<p>Use a tecla Tab para navegar por elementos que recebem ação do usuário no site, tais como links, botões, campos de formulário e outros na ordem em que eles são apresentados na página, e Shift + Tab para retornar. Use as setas direcionais para acessar as informações textuais.</p>
+
+		<p>Sugestões de programas disponíveis para pessoas com deficiência</p>
+		<p>- Nitrous Voice Flux: controla o computador por voz. Gratuito;</p>
+		<p>- NVDA: software livre para ler tela – vários idiomas (Windows);</p>
+		<p>- YeoSoft Text: leitor de tela em inglês e português;</p>
+		<p>- Jaws for Windows: leitor de tela – vários idiomas;</p>
+		<p>- Virtual Vision: leitor de telas em português do Brasil;</p>
+		<p>- DOSVOX: sistema para deficientes visuais (Windows ou Linux).</p>
+		<p>- Talckback: leitor de tela disponível em smartphones Android.</p>
+	<p>Observação: leia no manual do leitor de telas sobre a melhor forma de navegação em páginas web.</p><br>
+		
+		<p>LIBRAS - Língua Brasileira de Sinais</p>
+		<p>Este site é acessível em LIBRAS através do <a href="http://www.vlibras.gov.br/" target="_blank">VLibras</a>.</p>
+		<p>-Do lado direito de cada página do site existe o ícone de um Widget informando que o site é acessível em LIBRAS.</p>
+		<p>-Para traduzir, basta clicar sobre o ícone e selecionar o texto que deseja traduzir.</p>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="rodape">
+        <p>Desenvolvido por Gabriel Alexandre</p>
+        <p>Todos os direitos reservados &copy; 2022.</p>
+    </footer>
+
+    <!-- Vlibras (script de libras) -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

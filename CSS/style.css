@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+
+/* Base Data */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+video {
+    transition: 0.5s ease-in-out;
+    width: 50%;
+    height: auto;
+    margin-left: 24%;
+
+    box-shadow: 0px 0px 7px 2px rgb(34, 32, 32);
+    border-radius: 2px;
+
+}
+
+/* Header */
+#cabecalho {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 23, 23);
+}
+
+#cabecalho ul{
+    padding-left: 1%;
+
+}
+
+.imagem {
+    width: 20%;
+    padding-bottom: 0.5%;
+}
+
+#assistencia {
+    width: 18%;
+    padding-left: 60%;
+    
+
+}
+
+
+/* Conteúdo */
+#conteudo {
+    width: 100%;
+    padding: 1em;
+    min-height: 700px;
+    
+    background-color: white;
+    
+    box-sizing: border-box;
+
+}
+
+#conteudo .imagem {
+    width: 25%;
+}
+
+#conteudo h1 {
+   text-align: center;
+}
+
+#conteudo ol {
+    font-size: 1.5em;
+    padding-left: 1%;
+    
+
+}
+
+/* Menu interativo */
+#navegacao {
+    width: 98.92%;
+    border: 1px solid rgb(0, 0, 216);
+    background-color: rgb(0, 0, 216);
+    margin-bottom: 16px;
+    float: left;
+
+    padding-left: 1%;
+}
+
+#navegacao li {
+    border-right: 1px solid white;
+    list-style: none;
+    float: left;
+
+    position: relative;
+}
+
+#navegacao li a {
+    color: white;
+    padding: 5px 12px;
+
+    display: block;
+}
+
+#navegacao li:hover {
+    transition: 0.3s;
+    background-color: white;
+
+}
+
+#navegacao li:hover a {
+    transition: 0.3s;
+    color: black;
+    
+
+}
+
+#navegacao .sub-lista ul li a {
+    color: white;
+
+}
+
+#navegacao .sub-lista ul li:hover a {
+    transition: 0.3s;
+    color: black;
+
+}
+
+#navegacao li ul li {
+    background-color: rgb(0, 0, 196);
+    position: absolute;
+   /* top: 25px;
+    left: 0; */
+
+    display: none;
+}
+
+#navegacao .sub-lista:hover li {
+    display: flex;
+    
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* Rodapé */
+#rodape {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 2% 0;
+    margin-top: 10%;
+
+    background-color: rgb(255, 56, 56);
+
+}
+
+/* Página de contato */
+input, select {
+    width: 30%;
+    height: 40px;
+
+}
+
+select {
+    width: 320px;
+
+}
+
+fieldset {
+    border: 1px solid rgb(32, 21, 255);
+    border-radius: 3px;
+   /* box-shadow: 0 0 4px 1px black; */
+
+    padding: 1.5% 0.8%;
+    margin: 1.23% 1.5%;
+
+    box-sizing: border-box;
+}
+
+legend {
+    font-size: 18.5px;
+}
+
+input[type=submit], input[type=reset] {
+    transition: 0.2s ease-in-out;
+
+    position: relative;
+    border: 1px solid blue;
+    width: 155px;
+    text-align: center;
+
+    background-color: rgb(255, 255, 255);
+
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    transition: 0.3s;
+    background-color: rgb(241, 241, 241);
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+.asterisco:after {
+    content: " *";
+    color: red;
+
+}
+
+.buttons {
+    margin-left: 1.5%;
+
+}
+
+textarea {
+    font-family: 'Lato', sans-serif;
+    color: rgb(20, 20, 20);
+    margin-top: 6px;
+
+}
+
+/* Menu responsivo */
+.menu-icon {
+    width: 65px;
+    height: auto;
+    padding: 0;
+}
+
+input[type=checkbox] {
+    display: none;
+
+}
+
+/* Breadcrumb */
+#breadcrumb {
+    padding-left: 2%;
+    list-style-type: none;
+}
+
+#conteudo #breadcrumb li {
+    display: inline;
+}
+
+#breadcrumb li a {
+    color: rgb(75, 0, 137);
+}
+
+#breadcrumb li+li {
+    padding: 0 5px;
+}
+
+#conteudo #breadcrumb li+li:before {
+    content: "/\00a0";
+}
+
+/* Barra de acessibilidade */
+#atalhos {
+    transition: 0.7s;
+    background-color: white;
+}
+
+#atalhos li {
+    display: inline;
+}
+
+#atalhos a {
+    color: black;
+}
+
+#page-access {
+    transition: 0.2s;
+    padding-left: 65%;
+}
+
+#contraste, #sem-contraste, #aumentar, #diminuir {
+    padding-left: 1%;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    #cabecalho {
+        width: 100%;
+
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .imagem {
+        width: 25%;
+        height: auto;
+        padding-left: 2%;
+
+    }
+
+    video {
+        margin-top: 15%;
+        margin-left: 10%;
+        width: 75%;
+    }
+
+    #conteudo {
+        min-height: 950px;
+
+    }
+
+    .lista-principal {
+        margin-left: 10px;
+    }
+
+    #conteudo .imagem-conteudo {
+        width: 55%;
+        height: auto;
+
+    }
+
+    #assistencia {
+        width: 25%;
+        padding-left: 45%;
+
+    }
+
+    #rps_menu:checked ~ .menu {
+        display: block;
+    }
+
+    .menu li {
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+
+    #conteudo ol {
+        margin-right: 3px;
+    }
+
+    input[type=submit], input[type=reset] {
+        padding: 0 15px;
+        box-sizing: content-box;
+    }
+
+    input[type=text], select, input[type=date], input[type=number] {
+        width: 50%;
+    }
+
+    .sub-lista ul li {
+        float: left;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 32px;
+        margin-bottom: 12px;
+        z-index: 100;
+
+    }
+
+    .sub-lista:hover ~ .menu {
+        display: none;
+    }
+
+    #rodape {
+        position: relative;
+        margin-top: 100px;
+
+    }
+
+}
+
+/* Media queries for accessibility bar */
+@media screen and (max-width: 1850px) {
+    #page-access{
+        padding-left: 52%;
+    }
+
+}
+
+@media screen and (max-width: 1670px) {
+    #page-access{
+        padding-left: 42%;
+    }
+
+}
+
+@media screen and (max-width: 1450px) {
+    #page-access{
+        padding-left: 37%;
+    }
+
+}
+
+@media screen and (max-width: 1260px) {
+    #page-access{
+        padding-left: 32%;
+    }
+
+    #conteudo {
+        min-height: 800px;
+    }
+
+}
+
+@media screen and (max-width: 1155px) {
+    #page-access{
+        padding-left: 26%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    #page-access{
+        padding-left: 22%;
+    }
+
+}
+
+@media screen and (max-width: 912px) {
+    #page-access{
+        padding-left: 12%;
+    }
+
+    #conteudo {
+        min-height: 1050px;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+    #atalhos .fast-keys {
+        display: none;
+    }
+
+    #page-access{
+        padding-left: 1%;
+    }
+
+    #conteudo {
+        min-height: 895px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    #atalhos .fast-keys {
+        display: none;
+    }
+
+    #page-access {
+        padding-left: 1%;
+    }
+
+}
+
+/*  Desenvolvido por Gabriel A. */

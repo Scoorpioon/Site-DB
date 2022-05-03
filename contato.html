@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Primeira aula prática de HTML5 e CSS3">
+    <meta name="author" content="Gabriel Alexandre">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Aula HTML!</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header id="cabecalho">
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Ir para o conteúdo [1]</a></li>
+                <li><a href="#navegacao" accesskey="2" title="Ir para a barra de navegação">Ir para o menu [2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir para o rodapé">Ir para o rodapé [3]</a></li>
+                <li id="page-acess"><a href="acessibilidade.html" title="Ir para a página de acessibilidade">Acessibilidade</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste" title="Inverter o contraste">Contraste</a></li>
+                <li class="sem-contraste"><a href="javascript:void(0);" id="sem-contraste" title="Remover o contraste">Sem contraste</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar" title="Aumentar a fonte">A+</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="diminuir" title="Diminuir a fonte">A-</a></li>
+            </ul>
+        </div>
+        <img class="imagem" src="imagens/logo.png" alt="Logo da Obra Social Dom Bosco.">
+        <img id="assistencia" src="imagens/assistencia-e-desenvolvimento-social_centralizado.png" alt="Logo da prefeitura">
+
+        <!-- Navegação -->
+        <nav id="navegacao">
+            <!-- Menu responsivo-->
+            <label for="rps_menu"><img src="imagens/menu.png" alt="Ícone de menu" class="menu-icon"></label>
+            <input type="checkbox" id="rps_menu">
+            <!-- =============== -->
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li class="sub-lista">
+                    <a href="#">Listas</a>
+                    <ul>
+                        <li><a href="lista_ordenada.html">Lista ordenada</a></li>
+                        <li><a href="lista_nao_ordenada.html">Lista não ordenada</a></li>
+                    </ul>
+                </li>
+                <li><a href="layout.html">Layout</a></li>
+                <li><a href="contato.html">Fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal-->
+    <main id="conteudo">
+        <ul id="breadcrumb">
+            <li><a href="index.html">Início</a></li>
+            <li>Fale conosco</li>
+        </ul>
+        <h1>Fale conosco!</h1>
+        <form name="contact" action="">
+            <fieldset id="personal-information">
+                <legend>Dados pessoais</legend>
+
+                <label class="asterisco" for="name" required>Nome</label><br>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome aqui..."><br>
+
+                <label class="asterisco" for="age" required>Data de nascimento</label><br>
+                <input type="date" name="age" id="age"><br>
+                
+                <label for="cpf">CPF</label><br>
+                <input type="text" name="cpf" id="cpf" placeholder="123.456.789-99"><br>
+
+                <label class="asterisco" for="cel">Número de celular</label><br>
+                <input type="text" name="cel" id="cel" placeholder="(99) 12345-6789" required>
+            </fieldset>
+
+            <fieldset id="adress">
+                <legend>Endereço</legend>
+
+                <label for="cep">CEP</label><br>
+                <input type="text" name="cep" id="cep" placeholder="12345-678"><br>
+
+                <label for="city">Cidade</label><br>
+                <input type="text" name="city" id="city" placeholder="Cidade..."><br>
+
+                <label class="asterisco" for="bairro">Bairro</label><br>
+                <input type="text" name="bairro" id="bairro" placeholder="Bairro..." required><br>
+
+                <label class="asterisco" for="street">Rua</label><br>
+                <input type="text" name="street" id="street" placeholder="Rua ou avenida..." required><br>
+                
+                <label class="asterisco" for="number">Número</label><br>
+                <input type="number" name="number" id="number" placeholder="Número residencial..." required><br>
+
+                <label for="complement">Complemento</label><br>
+                <input type="text" name="complement" id="complement" placeholder="Apartamento, bloco..."><br>
+            </fieldset>
+
+            <fieldset id="message">
+                <legend>Mensagem</legend>
+
+                <label for="options">Opções</label><br>
+                <select name="options" id="options" required>
+                    <option value="" selected disabled>Selecione sua opção</option>
+                    <option value="reclamação">Reclamação</option>
+                    <option value="sugestão">Sugestão</option>
+                    <option value="outro">Outro</option>
+                </select><br>
+                <textarea name="message" id="message" cols="45" rows="10" placeholder="Digite sua mensagem aqui..."></textarea><br>
+            </fieldset>
+
+            <div class="buttons">
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="rodape">
+        <p>Desenvolvido por Gabriel Alexandre</p>
+        <p>Todos os direitos reservados &copy; 2022.</p>
+    </footer>
+
+    <!-- Vlibras (script de libras) -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

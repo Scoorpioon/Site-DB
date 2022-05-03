@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conteúdo de HTML5 e CSS3">
+    <meta name="author" content="Gabriel Alexandre">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Aula HTML!</title>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir para o conteúdo">Ir para o conteúdo [1]</a></li>
+                <li><a href="#navegacao" accesskey="2" title="Ir para a barra de navegação">Ir para o menu [2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir para o rodapé">Ir para o rodapé [3]</a></li>
+                <li id="page-acess"><a href="acessibilidade.html" title="Ir para a página de acessibilidade">Acessibilidade</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste" title="Inverter o contraste">Contraste</a></li>
+                <li class="sem-contraste"><a href="javascript:void(0);" id="sem-contraste" title="Remover o contraste">Sem contraste</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar" title="Aumentar a fonte">A+</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="diminuir" title="Diminuir a fonte">A-</a></li>
+            </ul>
+        </div>
+        <img class="imagem imagem-layout" src="imagens/logo.png" alt="Logo da Obra Social Dom Bosco.">
+        <img id="assistencia" src="imagens/assistencia-e-desenvolvimento-social_centralizado.png" alt="Logo da prefeitura">
+        <nav id="navegacao">
+            <!-- Menu responsivo-->
+            <label for="rps_menu"><img src="imagens/menu.png" alt="Ícone de menu" class="menu-icon"></label>
+            <input type="checkbox" id="rps_menu">
+            <!-- =============== -->
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li class="sub-lista">
+                    <a href="#">Listas</a>
+                    <ul>
+                        <li><a href="lista_ordenada.html">Lista ordenada</a></li>
+                        <li><a href="lista_nao_ordenada.html">Lista não ordenada</a></li>
+                    </ul>
+                </li>
+                <li><a href="layout.html">Layout</a></li>
+                <li><a href="contato.html">Fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <ul id="breadcrumb">
+            <li><a href="index.html">Início</a></li>
+            <li>Layout</li>
+        </ul>
+        <h1>Layout</h1>
+        <p> Elementos Semânticos de Layout HTML</p>
+        <img class="imagem imagem-conteudo" src="imagens/layout.png" alt="Imagem do Layout">
+    </main>
+
+    <footer id="rodape">
+        <p>Desenvolvido por Gabriel Alexandre</p>
+        <p>Todos os direitos reservados &copy; 2022.</p>
+    </footer>
+
+    <!-- Vlibras (script de libras) -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>
